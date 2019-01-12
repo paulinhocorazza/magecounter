@@ -5,11 +5,6 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.media.Image;
-import android.media.MediaPlayer;
-import android.os.CountDownTimer;
-import android.provider.ContactsContract;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -18,8 +13,6 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.Random;
 
@@ -27,7 +20,6 @@ public class MainActivity extends Activity {
 
     private EditText vida1;
     private EditText vida2;
-    private EditText cronometro;
     private int lifePoints1 = 20;
     private int lifePoints2 = 20;
     private int lifeCounter1 = 0;
@@ -42,14 +34,14 @@ public class MainActivity extends Activity {
     private AlertDialog.Builder dialogoDado;
     private ImageView botaoInfo;
     private AlertDialog.Builder dialogoInfo;
-    private CountDownTimer contadorTempo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);/// mantém a tela sempre acessa
-        
 
         vida1 = (EditText) findViewById(R.id.inicioVida1);
         vida1.setText("20");

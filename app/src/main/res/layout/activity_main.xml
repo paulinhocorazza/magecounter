@@ -11,36 +11,38 @@
 
     <Button
         android:id="@+id/btnMais1"
-        android:layout_width="89dp"
-        android:layout_height="52dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="324dp"
         android:background="@android:color/darker_gray"
         android:text="+"
         android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMais2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.883"
-        app:layout_constraintStart_toEndOf="@+id/btnMenos1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnMenos1"
-        android:layout_width="89dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="96dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:background="@android:color/darker_gray"
         android:text="-"
         android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMais1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/btnMais1" />
 
     <EditText
         android:id="@+id/inicioVida1"
         android:layout_width="100dp"
-        android:layout_height="75dp"
+        android:layout_height="0dp"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="68dp"
         android:background="@android:color/background_light"
         android:backgroundTint="@android:color/transparent"
         android:ellipsize="start"
@@ -52,16 +54,18 @@
         android:textColor="@android:color/holo_green_light"
         android:textColorLink="@android:color/background_light"
         android:textSize="60sp"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/botaoZerar1Id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47000003" />
 
     <EditText
         android:id="@+id/inicioVida2"
         android:layout_width="100dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="158dp"
         android:background="@android:color/background_light"
         android:backgroundTint="@android:color/transparent"
         android:ellipsize="start"
@@ -70,92 +74,92 @@
         android:inputType="textPersonName"
         android:textColor="@android:color/holo_green_light"
         android:textSize="60sp"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/d20Id" />
 
     <Button
         android:id="@+id/btnMenos2"
-        android:layout_width="89dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="332dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:background="@android:color/darker_gray"
         android:text="-"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnMais2"
-        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMais2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMenos1"
-        app:layout_constraintVertical_bias="0.111" />
+        app:layout_constraintTop_toTopOf="@+id/btnMais2" />
 
     <Button
         android:id="@+id/btnMais2"
-        android:layout_width="89dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="336dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="47dp"
         android:background="@android:color/darker_gray"
         android:text="+"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/inicioVida2"
-        app:layout_constraintTop_toBottomOf="@+id/btnMais1"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintBottom_toTopOf="@+id/infoId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMais1" />
 
     <Button
         android:id="@+id/botaoZerar1Id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="43dp"
         android:text="zerar"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/d20Id"
+        app:layout_constraintEnd_toEndOf="@+id/d20Id"
         app:layout_constraintTop_toBottomOf="@+id/inicioVida1" />
 
     <Button
         android:id="@+id/botaoZerar2Id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="ZERAR"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inicioVida2"
-        app:layout_constraintVertical_bias="0.781" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inicioVida2" />
 
     <ImageView
         android:id="@+id/d20Id"
         android:layout_width="143dp"
-        android:layout_height="121dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="41dp"
         android:src="@drawable/dado"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/inicioVida2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.522" />
+        app:layout_constraintTop_toBottomOf="@+id/botaoZerar1Id" />
 
     <ImageView
         android:id="@+id/infoId"
-        android:layout_width="30dp"
-        android:layout_height="32dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginStart="108dp"
+        android:layout_marginBottom="7dp"
         android:src="@drawable/info"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/botaoZerar2Id" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnMais2"
+        app:layout_constraintTop_toBottomOf="@+id/btnMais2" />
 
 </android.support.constraint.ConstraintLayout>
